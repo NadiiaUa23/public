@@ -6,10 +6,10 @@
 
 while ( have_posts() ) :
     the_post(); ?>
+
+    <?php the_title('<h1>', '</h1>'); ?>
     <?php the_content(); ?>
     <?php endwhile; // End of the loop. 
-    
-    get_template_part( 'content' );
     ?>
 </div><!-- #page -->
 
